@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] </title>
+    <link href="/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Lab4</h1>
+        <ul>
+            <li>
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a asp-controller="Students" asp-action="Index">Students</a>
+            </li>
+            <li>
+                <a asp-controller="Communities" asp-action="Index">Communities</a>
+            </li>
+        </ul>
+
+
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>
+            Footer
+        </p>
+
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
